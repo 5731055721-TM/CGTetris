@@ -113,6 +113,8 @@ void initRendering() {
                           5,
                           8 * randomFloat() - 4);
     Block block = Block('t',pos,Vec3f(0,0,0),t_model);
+    if(block.getType()=='t') block.setModel(t_model);
+    if(block.getType()=='l') block.setModel(l_model);
     _blocks.push_back(block);
 }
 void DrawAxes() {
@@ -237,44 +239,45 @@ void drawScene() {
 	glTranslatef(0,0,-70);
 //	setUptexture("D:/_fang/year 3/cg/demotetris/texture/watertexture.bmp");
 //	setUptexture("D:/_fang/year 3/cg/demotetris/texture/crate.bmp");
-	setUptexture("D:/_fang/year 3/cg/demotetris/texture/brick.bmp");
+//	setUptexture("D:/_fang/year 3/cg/demotetris/texture/brick.bmp");
+	setUptexture("D:/cg_exercise/CGTetris/demotetris/texture/brick.bmp");
 
 	cout<<"current "<<current<<endl;
 	cout<<"num block "<<_blocks.size()<<endl;
 
-//	for(int i=0; i<_blocks.size(); i++) {
-//        cout<<"push"<<endl;
-//        glPushMatrix();
-//        glTranslatef(_blocks[i].getPos('x'),
-//                     _blocks[i].getPos('y'),
-//                     _blocks[i].getPos('z'));
-//        cout<<"translated"<<endl;
-//        glRotatef(_blocks[i].getAngle('x'),1,0,0);
-//        glRotatef(_blocks[i].getAngle('y'),0,1,0);
-//        glRotatef(_blocks[i].getAngle('z'),0,0,1);
-//        cout<<"rotated"<<endl;
-//        if(_blocks[i].getType()=='t') _blocks[i].setModel(t_model);
-//        if(_blocks[i].getType()=='l') _blocks[i].setModel(l_model);
-//        cout<<"model set"<<endl;
-//        _blocks[i].getModel().Draw();
-//    //        if(b.getModel()==t_model) cout<<"correct model"<<endl;
-//        cout<<"pop"<<endl;
-//        glPopMatrix();
-//	}
-
 	for(int i=0; i<_blocks.size(); i++) {
+        cout<<"push"<<endl;
         glPushMatrix();
         glTranslatef(_blocks[i].getPos('x'),
                      _blocks[i].getPos('y'),
                      _blocks[i].getPos('z'));
+        cout<<"translated"<<endl;
         glRotatef(_blocks[i].getAngle('x'),1,0,0);
         glRotatef(_blocks[i].getAngle('y'),0,1,0);
         glRotatef(_blocks[i].getAngle('z'),0,0,1);
-        drawCube('c',*blue,0, 0, 0);
-        drawCube('c',*red,2, 0, 0);
-        drawCube('c',*blue,2, 2, 0);
+        cout<<"rotated"<<endl;
+//        if(_blocks[i].getType()=='t') _blocks[i].setModel(t_model);
+//        if(_blocks[i].getType()=='l') _blocks[i].setModel(l_model);
+        cout<<"model set"<<endl;
+        _blocks[i].getModel().Draw();
+    //        if(b.getModel()==t_model) cout<<"correct model"<<endl;
+        cout<<"pop"<<endl;
         glPopMatrix();
 	}
+
+//	for(int i=0; i<_blocks.size(); i++) {
+//        glPushMatrix();
+//        glTranslatef(_blocks[i].getPos('x'),
+//                     _blocks[i].getPos('y'),
+//                     _blocks[i].getPos('z'));
+//        glRotatef(_blocks[i].getAngle('x'),1,0,0);
+//        glRotatef(_blocks[i].getAngle('y'),0,1,0);
+//        glRotatef(_blocks[i].getAngle('z'),0,0,1);
+//        drawCube('c',*blue,0, 0, 0);
+//        drawCube('c',*red,2, 0, 0);
+//        drawCube('c',*blue,2, 2, 0);
+//        glPopMatrix();
+//	}
 
 	glutSwapBuffers();
 }
@@ -297,8 +300,10 @@ int main(int argc, char** argv) {
 	glutKeyboardFunc(handleKeypress);
 	glutSpecialFunc(handleArrow);
 	glutReshapeFunc(handleResize);
-	t_model.Load("D:/_fang/year 3/cg/demotetris/model/t-tetris-m.obj");
-	l_model.Load("D:/_fang/year 3/cg/demotetris/model/l-tetris-m.obj");
+	t_model.Load("D:/cg_exercise/CGTetris/demotetris/model/t-tetris-m.obj");
+	l_model.Load("D:/cg_exercise/CGTetris/demotetris/model/l-tetris-m.obj");
+//	t_model.Load("D:/_fang/year 3/cg/demotetris/model/t-tetris-m.obj");
+//	l_model.Load("D:/_fang/year 3/cg/demotetris/model/l-tetris-m.obj");
 //	glutTimerFunc(TIMER_MS, update, 0);
 	glutMainLoop();
 	return 0;

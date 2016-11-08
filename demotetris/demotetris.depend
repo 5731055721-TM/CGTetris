@@ -1,40 +1,40 @@
 # depslib dependency file v1.0
-1478261099 source:d:\_fang\year 3\cg\demotetris\main.cpp
-	<iostream>
-	<cmath>
-	<cstdlib>
-	<ctime>
-	<set>
-	<stdlib.h>
-	<vector>
-	<time.h>
-	<OpenGL/OpenGL.h>
-	<GLUT/glut.h>
-	<GL/glut.h>
-	"imageloader.h"
-	"modelloader.h"
-	"vec3f.h"
+1478609829 source:d:\cg_exercise\cgtetris\demotetris\block.cpp
+	<assert.h>
+	<fstream>
 	"block.h"
+	"vec3f.h"
+	"modelloader.h"
 
-1341006776 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
+1341010370 c:\program files (x86)\codeblocks\mingw\include\assert.h
 	<_mingw.h>
-	<stddef.h>
 
-1341006770 c:\program files (x86)\codeblocks\mingw\include\_mingw.h
+1341010370 c:\program files (x86)\codeblocks\mingw\include\_mingw.h
 
-1426324528 c:\program files (x86)\codeblocks\mingw\include\gl\glut.h
-	"freeglut_std.h"
+1478609829 d:\cg_exercise\cgtetris\demotetris\block.h
+	"vec3f.h"
+	"modelloader.h"
 
-1426324528 c:\program files (x86)\codeblocks\mingw\include\gl\freeglut_std.h
+1478609829 d:\cg_exercise\cgtetris\demotetris\vec3f.h
+	<iostream>
+
+1478609829 d:\cg_exercise\cgtetris\demotetris\modelloader.h
+
+1478609829 source:d:\cg_exercise\cgtetris\demotetris\imageloader.cpp
+	<assert.h>
+	<fstream>
+	"imageloader.h"
+
+1478609829 d:\cg_exercise\cgtetris\demotetris\imageloader.h
+
+1478609829 source:d:\cg_exercise\cgtetris\demotetris\modelloader.cpp
+	<assert.h>
+	<fstream>
+	<cmath>
 	<windows.h>
-	<EGL/egl.h>
-	<GLES/gl.h>
-	<GLES2/gl2.h>
-	<OpenGL/gl.h>
-	<OpenGL/glu.h>
+	<iostream>
 	<GL/gl.h>
-	<GL/glu.h>
-	<stdlib.h>
+	"modelloader.h"
 
 1301111162 c:\program files (x86)\codeblocks\mingw\include\windows.h
 	<winresrc.h>
@@ -85,7 +85,7 @@
 
 1301111162 c:\program files (x86)\codeblocks\mingw\include\winerror.h
 
-1341006776 c:\program files (x86)\codeblocks\mingw\include\string.h
+1341010376 c:\program files (x86)\codeblocks\mingw\include\string.h
 	<_mingw.h>
 	<stddef.h>
 
@@ -155,7 +155,7 @@
 
 1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnterr.h
 
-1341006772 c:\program files (x86)\codeblocks\mingw\include\excpt.h
+1341010372 c:\program files (x86)\codeblocks\mingw\include\excpt.h
 	<_mingw.h>
 	<windef.h>
 
@@ -217,6 +217,10 @@
 	<objidl.h>
 	<cguid.h>
 
+1341010376 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
+	<_mingw.h>
+	<stddef.h>
+
 1301111156 c:\program files (x86)\codeblocks\mingw\include\objidl.h
 	<objfwd.h>
 
@@ -236,85 +240,10 @@
 
 1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\gl.h
 
-1301111164 c:\program files (x86)\codeblocks\mingw\include\gl\glu.h
-	<stddef.h>
-	<GL/gl.h>
-
-1477756185 d:\_fang\year 3\cg\demotetris\imageloader.h
-
-1478173059 source:d:\_fang\year 3\cg\demotetris\imageloader.cpp
-	<assert.h>
-	<fstream>
-	"imageloader.h"
-
-1341006770 c:\program files (x86)\codeblocks\mingw\include\assert.h
-	<_mingw.h>
-
-1458624292 source:d:\_fang\year 3\cg\demotetris\opengl local vs global code\matrix.cpp
-	"Matrix.h"
-	<iostream>
-	<cmath>
-
-1458624294 d:\_fang\year 3\cg\demotetris\opengl local vs global code\matrix.h
-
-1458624294 d:\_fang\year 3\cg\demotetris\matrix.h
-
-1478016740 d:\_fang\year 3\cg\demotetris\modelloader.h
-
-1341006776 c:\program files (x86)\codeblocks\mingw\include\stdio.h
-	<_mingw.h>
-	<stddef.h>
-	<stdarg.h>
-	<sys/types.h>
-
-1341006780 c:\program files (x86)\codeblocks\mingw\include\sys\types.h
-	<_mingw.h>
-	<stddef.h>
-
-1476892120 source:d:\_fang\year 3\cg\demotetris\modelloader.cpp
-	<assert.h>
-	<fstream>
-	<cmath>
-	<windows.h>
-	<iostream>
-	<GL/gl.h>
-	"modelloader.h"
-
-1477758060 source:d:\_fang\year 3\cg\demotetris\collision.cpp
-	<cstdlib>
-	<ctime>
-	<iostream>
-	<set>
-	<stdlib.h>
-	<vector>
-	"collision.h"
-	"vec3f.h"
-
-1477757868 d:\_fang\year 3\cg\demotetris\collision.h
-	"vec3f.h"
-
-1478018366 d:\_fang\year 3\cg\demotetris\vec3f.h
-	<iostream>
-
-1478018861 source:d:\_fang\year 3\cg\demotetris\vec3f.cpp
+1478609829 source:d:\cg_exercise\cgtetris\demotetris\vec3f.cpp
 	<math.h>
 	"vec3f.h"
 
-1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
+1341010374 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
-
-1478159959 source:d:\_fang\year 3\cg\demotetris\block.cpp
-	<assert.h>
-	<fstream>
-	"block.h"
-	"vec3f.h"
-	"modelloader.h"
-
-1478159959 d:\_fang\year 3\cg\demotetris\block.h
-	"vec3f.h"
-	"modelloader.h"
-
-1341006776 c:\program files (x86)\codeblocks\mingw\include\time.h
-	<_mingw.h>
-	<stddef.h>
 
