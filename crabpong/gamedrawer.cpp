@@ -100,21 +100,28 @@ GameDrawer::GameDrawer() {
 
 	waterTextureOffset = 0;
 
-	vector<const char*> textureFilenames;
-	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab1.bmp");
-	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab2.bmp");
-	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab3.bmp");
-	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab4.bmp");
-	crabModel = MD2Model::load("D:/_fang/year 3/cg/crabpong/crab.md2", textureFilenames);
+	vector<const char*> textureFilenames; //D:/cg_exercise/crabpong/
+	textureFilenames.push_back("D:/cg_exercise/crabpong/crab1.bmp");
+	textureFilenames.push_back("D:/cg_exercise/crabpong/crab2.bmp");
+	textureFilenames.push_back("D:/cg_exercise/crabpong/crab3.bmp");
+	textureFilenames.push_back("D:/cg_exercise/crabpong/crab4.bmp");
+	crabModel = MD2Model::load("D:/cg_exercise/crabpong/crab.md2", textureFilenames);
+//	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab1.bmp");
+//	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab2.bmp");
+//	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab3.bmp");
+//	textureFilenames.push_back("D:/_fang/year 3/cg/crabpong/crab4.bmp");
+//	crabModel = MD2Model::load("D:/_fang/year 3/cg/crabpong/crab.md2", textureFilenames);
 
 	setupBarriers();
 	setupPole();
 
-	Image* image = loadBMP("D:/_fang/year 3/cg/crabpong/sand.bmp");
+    Image* image = loadBMP("D:/cg_exercise/crabpong/sand.bmp");
+	//Image* image = loadBMP("D:/_fang/year 3/cg/crabpong/sand.bmp");
 	sandTextureId = loadTexture(image);
 	delete image;
 
-	image = loadBMP("D:/_fang/year 3/cg/crabpong/water.bmp");
+    image = loadBMP("D:/cg_exercise/crabpong/water.bmp");
+	//image = loadBMP("D:/_fang/year 3/cg/crabpong/water.bmp");
 	waterTextureId = loadTexture(image);
 	delete image;
 }
@@ -156,7 +163,8 @@ void GameDrawer::setGame(Game* game1) {
 }
 
 void GameDrawer::setupBarriers() {
-	Image* image = loadBMP("D:/_fang/year 3/cg/crabpong/vtr.bmp");
+    Image* image = loadBMP("D:/cg_exercise/crabpong/vtr.bmp");
+	//Image* image = loadBMP("D:/_fang/year 3/cg/crabpong/vtr.bmp");
 	GLuint textureId = loadTexture(image);
 	delete image;
 

@@ -42,7 +42,17 @@
 			<Add library="gdi32" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/lib" />
 		</Linker>
+		<Unit filename="gamedrawer.cpp" />
+		<Unit filename="gamedrawer.h" />
+		<Unit filename="imageloader.cpp" />
+		<Unit filename="imageloader.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="md2model.cpp" />
+		<Unit filename="md2model.h" />
+		<Unit filename="text3d.cpp" />
+		<Unit filename="text3d.h" />
+		<Unit filename="vec3f.cpp" />
+		<Unit filename="vec3f.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

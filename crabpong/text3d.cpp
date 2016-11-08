@@ -509,7 +509,8 @@ BreakOuter2:
 void t3dInit() {
 	if (font == NULL) {
 		ifstream input;
-		input.open("D:/_fang/year 3/cg/crabpong/charset", istream::binary);
+		input.open("D:/cg_exercise/crabpong/charset", istream::binary);
+		//input.open("D:/_fang/year 3/cg/crabpong/charset", istream::binary);
 		font = new T3DFont(input);
 		input.close();
 	}

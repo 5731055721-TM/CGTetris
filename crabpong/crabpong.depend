@@ -10,12 +10,12 @@
 	<GL/glut.h>
 	"gamedrawer.h"
 
-1341006774 c:\program files (x86)\codeblocks\mingw\include\math.h
+1341010374 c:\program files (x86)\codeblocks\mingw\include\math.h
 	<_mingw.h>
 
-1341006770 c:\program files (x86)\codeblocks\mingw\include\_mingw.h
+1341010370 c:\program files (x86)\codeblocks\mingw\include\_mingw.h
 
-1341006776 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
+1341010376 c:\program files (x86)\codeblocks\mingw\include\stdlib.h
 	<_mingw.h>
 	<stddef.h>
 
@@ -82,7 +82,7 @@
 
 1301111162 c:\program files (x86)\codeblocks\mingw\include\winerror.h
 
-1341006776 c:\program files (x86)\codeblocks\mingw\include\string.h
+1341010376 c:\program files (x86)\codeblocks\mingw\include\string.h
 	<_mingw.h>
 	<stddef.h>
 
@@ -152,7 +152,7 @@
 
 1301111158 c:\program files (x86)\codeblocks\mingw\include\rpcnterr.h
 
-1341006772 c:\program files (x86)\codeblocks\mingw\include\excpt.h
+1341010372 c:\program files (x86)\codeblocks\mingw\include\excpt.h
 	<_mingw.h>
 	<windef.h>
 
@@ -285,7 +285,7 @@
 	<fstream>
 	"imageloader.h"
 
-1341006770 c:\program files (x86)\codeblocks\mingw\include\assert.h
+1341010370 c:\program files (x86)\codeblocks\mingw\include\assert.h
 	<_mingw.h>
 
 1219388788 source:d:\_fang\year 3\cg\crabpong\md2model.cpp
@@ -305,4 +305,81 @@
 1219388788 source:d:\_fang\year 3\cg\crabpong\vec3f.cpp
 	<math.h>
 	"vec3f.h"
+
+1478609828 source:d:\cg_exercise\crabpong\main.cpp
+	<cstdlib>
+	<ctime>
+	<iostream>
+	<math.h>
+	<stdlib.h>
+	<OpenGL/OpenGL.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"gamedrawer.h"
+
+1478609828 d:\cg_exercise\crabpong\gamedrawer.h
+	<OpenGL/OpenGL.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+
+1478610251 source:d:\cg_exercise\crabpong\gamedrawer.cpp
+	<math.h>
+	<sstream>
+	<vector>
+	<OpenGL/OpenGL.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"game.h"
+	"gamedrawer.h"
+	"imageloader.h"
+	"md2model.h"
+	"text3d.h"
+
+1478609828 d:\cg_exercise\crabpong\game.h
+	<vector>
+
+1478609828 d:\cg_exercise\crabpong\imageloader.h
+
+1478609828 d:\cg_exercise\crabpong\md2model.h
+	<vector>
+	<OpenGL/OpenGL.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"vec3f.h"
+
+1478609829 d:\cg_exercise\crabpong\vec3f.h
+	<iostream>
+
+1478609829 d:\cg_exercise\crabpong\text3d.h
+	<string>
+
+1478609828 source:d:\cg_exercise\crabpong\imageloader.cpp
+	<assert.h>
+	<fstream>
+	"imageloader.h"
+
+1478609828 source:d:\cg_exercise\crabpong\md2model.cpp
+	<fstream>
+	<vector>
+	"imageloader.h"
+	"md2model.h"
+
+1478610347 source:d:\cg_exercise\crabpong\text3d.cpp
+	<fstream>
+	<math.h>
+	<OpenGL/OpenGL.h>
+	<GLUT/glut.h>
+	<GL/glut.h>
+	"text3d.h"
+
+1478609829 source:d:\cg_exercise\crabpong\vec3f.cpp
+	<math.h>
+	"vec3f.h"
+
+1478609828 source:d:\cg_exercise\crabpong\game.cpp
+	<cmath>
+	<cstdlib>
+	<math.h>
+	<vector>
+	"game.h"
 
